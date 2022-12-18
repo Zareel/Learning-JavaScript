@@ -2,7 +2,11 @@
 // console.log(names);
 // console.log(names.length);
 // console.log(names[3]);
-
+/*
+let arr = ["India", "Sweden", "Norway", "Iceland"];
+arr[2] = "Denmark";
+console.log(arr);
+*/
 //? how to access the last element of an array
 /*
 let names = ["shon", "shine", "sharon", "bhagya", "preksha"];
@@ -44,13 +48,16 @@ let arr3 = [6, 7, 6, 7, 7, 7, 7, 7, 7, 7];
 console.log(arr1.concat(arr2));
 console.log(arr1.concat(arr2, arr3));
 */
-
+/*
+let avengers = ["hawkeye", "thor", "capton america"];
+let weapons = ["bow", "hurricaane hammer", "shield"];
+console.log(avengers.concat(weapons));
+*/
 //? fill
 /*
 let arr4 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-arr4.fill("zareel", 2, 4);
+arr4.fill("zareel", 2, 3);
 console.log(arr4);
-
 */
 //? includes
 /*
@@ -80,7 +87,12 @@ console.log(var1);
 console.log(typeof var1);
 console.log(typeof arr1);
 */
-
+/*
+let arr = ["India", "Sweden", "Norway", "Iceland"];
+console.log(arr.join());
+console.log(arr.join(" "));
+console.log(arr.join("_"));
+*/
 //? key
 //? for ... of
 
@@ -89,47 +101,88 @@ console.log(typeof arr1);
 let num = [1, 2, 3, "zareel", 4, 5, 6, 7, 8, "zareel", "zareel"];
 console.log(num.lastIndexOf("zareel"));
 */
-
+/*
+let arr = [
+  "India",
+  "Sweden",
+  "Norway",
+  "Iceland",
+  "India",
+  "Denmark",
+  "Norway",
+  "India",
+  "Norway",
+];
+console.log(arr.lastIndexOf("Norway"));
+*/
 //? map
 /*
 let math = [1, 4, 9, 16, 25];
 console.log(math.map(Math.sqrt));
 */
+/*
+let numbers = [1, 2, 3, 4, 5, 6];
+let map1 = numbers.map((x) => x ** 2);
+console.log(map1);
 
+let nums = [1, 2, 3, 4, 5];
+console.log(nums.map((x) => x ** 2));
+*/
 //? pop -> pop takes away the element at the last index value
 /*
 let names = ["shon", "shine", "sharon", "bhagya", "preksha"];
 console.log(names.pop());
 console.log(names);
 */
-
+/*
+let arr = ["India", "Sweden", "Norway", "Iceland"];
+console.log(arr.pop());
+console.log(arr);
+*/
 //? reverse
 /*
 let names = ["shon", "shine", "sharon", "bhagya", "preksha"];
 console.log(names.reverse());
 */
-
+/*
+let numberNames = ["one", "two", "three", "four", "five"];
+console.log(numberNames.reverse());
+*/
+/*
+let order = ["top", "middle", "bottom"];
+console.log(order.reverse());
+*/
 //? shift -> shift takes away the element at the first index vaule
 /*
 let names = ["shon", "shine", "sharon", "bhagya", "preksha"];
 console.log(names.shift());
 console.log(names);
 */
-
+/*
+let arr = ["first", "second", "third", "fourth", "fifth"];
+console.log(arr.shift());
+*/
 //? sort
 /*
 let names = ["shon", "shine", "sharon", "bhagya", "preksha"];
 console.log(names.sort());
 console.log(names.reverse(names.sort()));
 */
-
+/*
+let order = ["cat", "apple", "duck", "ball"];
+console.log(order.sort());
+*/
 //? unshift
 /*
 let names = ["shon", "shine", "sharon", "bhagya", "preksha"];
 names.unshift("ana", "ivin");
 console.log(names);
 */
-
+/*
+let names = ["shine", "shon"];
+console.log(names.unshift("zareel"));
+console.log(names);
+*/
 //? converting to array
 /*
 let name = "zareel";
