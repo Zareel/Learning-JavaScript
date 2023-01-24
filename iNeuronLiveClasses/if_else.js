@@ -30,6 +30,3 @@ if (standard == 1) {
   console.log("room 5");
 }
 */
-
-let name = "zareel";
-console.log(typeof name);

@@ -1,3 +1,46 @@
+/*
+function isEven(element) {
+  if (element % 2 == 0) {
+    return true;
+  } else return false;
+}
+
+console.log(isEven(25));
+*/
+/*
+//! arrow function
+
+let isEven = (element) => {
+  if (element % 2 == 0) {
+    return true;
+  }
+  return false;
+};
+console.log(isEven(30));
+
+//? 'every' keyword
+
+let result = [2, 3, 6, 5, 8, 7].every(isEven);
+console.log(result);
+*/
+
+//? callback
+
+let result = [2, 4, 8, 6].every((e) => {
+  return e % 2 === 0;
+});
+console.log(result);
+
+//* curly braces is not required for one line of code
+
+let results = [2, 5, 6, 8, 9].every((e) => e % 2 === 0);
+console.log(results);
+
+//or
+
+let res = [2, 6, 8].every((e) => e % 2 === 0);
+console.log(res);
+
 // let names = ["shon", "shine", "sharon", "bhagya", "preksha"];
 // console.log(names);
 // console.log(names.length);
