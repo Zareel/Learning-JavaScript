@@ -44,3 +44,13 @@ let outer = () => {
 let val = outer();
 val();
 */
+
+let outerFunction = () => {
+  let firstName = "Zareel";
+  let innerFunction = () => {
+    console.log(firstName);
+  };
+  return innerFunction;
+};
+let value = outerFunction();
+value();

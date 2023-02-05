@@ -115,3 +115,37 @@ let [num1, num2, ...rest] = arr;
 console.log(num1, num2);
 console.log(rest);
 */
+//? HOF
+
+//? HOF =>is a function that takes Other function as parameter
+//? forEach() is hof because it takes another fuction which is callback
+
+//? callback => A fuction  which can be passed as parameter to other function
+
+function A(a) {}
+function a() {}
+
+//? functional programing => so that we dont have to write regula loops and fuction instead we can use functional programming such as forEach(), every() etc
+/*
+const arr = ["zareel", "shine", "shon"];
+
+arr.forEach((name) => {
+  console.log(name + " is family");
+});
+*/
+//? map()
+//? do something with all the items available
+const arr = ["zareel", "shine", "shon"];
+/*
+let number = [1, 2, 3, 4, 5, 6];
+let number2 = number.map((num) => num * num);
+console.log(number2);
+*/
+
+//? filter()
+
+const countries = ["India", "Canada", "UAE", "UK"];
+const count = countries.filter((country) => country.includes("ia"));
+console.log(count);
+
+//? reduce()
